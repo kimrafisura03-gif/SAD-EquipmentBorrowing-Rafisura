@@ -874,12 +874,9 @@ async function returnEquipment(
     }
 
 
-    alert(
-        "Equipment returned successfully."
-    );
+alert("Equipment returned successfully.");
 
-
-    await loadTransactions();
+await loadTransactions();
 
 }
 
