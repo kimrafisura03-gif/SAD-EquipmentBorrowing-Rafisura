@@ -874,12 +874,12 @@ async function returnEquipment(
     }
 
 
-    alert(
-        "Equipment returned successfully."
-    );
+alert("Equipment returned successfully.");
 
+await loadTransactions();
 
-    await loadTransactions();
+// Refresh equipment table and dashboard
+window.dispatchEvent(new Event("equipmentChanged"));
 
 }
 
